@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QuietTrace - A private, offline-first journaling app for iOS and Android. Trace your thoughts, quietly.">
+    <meta name="keywords" content="journaling app, private journal, diary app, offline journal, secure diary">
+    <meta name="author" content="Steve Gray">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://quiettrace.app/">
+    <meta property="og:title" content="QuietTrace - Private Journaling App">
+    <meta property="og:description" content="A private, offline-first journaling app. Trace your thoughts, quietly.">
+    <meta property="og:site_name" content="QuietTrace">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="QuietTrace - Private Journaling App">
+    <meta name="twitter:description" content="A private, offline-first journaling app. Trace your thoughts, quietly.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✍️</text></svg>">
+    
+    <title>QuietTrace - Private Journaling App</title>
+    
+    <style>
+        /* CSS Reset */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Base Styles */
+        :root {
+            --gradient-start: #667eea;
+            --gradient-end: #764ba2;
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.85);
+            --accent: rgba(255, 255, 255, 0.2);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            text-align: center;
+            max-width: 600px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Logo / Icon */
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Typography */
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 3.5rem);
+            margin-bottom: 1rem;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            font-size: clamp(1.2rem, 4vw, 1.5rem);
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* Status Badge */
+        .status {
+            font-size: 1rem;
+            padding: 10px 24px;
+            background: var(--accent);
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .status:hover {
+            transform: scale(1.05);
+        }
+
+        /* Description */
+        .description {
+            font-size: clamp(0.95rem, 3vw, 1.05rem);
+            line-height: 1.7;
+            opacity: 0.85;
+            max-width: 500px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Features List */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin: 2.5rem 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .feature-item {
+            padding: 1rem;
+            background: var(--accent);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-text {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 3rem;
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        footer a {
+            color: var(--text-primary);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            transition: border-color 0.2s ease;
+        }
+
+        footer a:hover {
+            border-color: var(--text-primary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 640px) {
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 400px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="logo" role="img" aria-label="Pen emoji">✍️</div>
+        
+        <h1>QuietTrace</h1>
+        
+        <p class="tagline">Trace your thoughts, quietly</p>
+        
+        <div class="status" role="status" aria-live="polite">
+            🚧 Coming Soon
+        </div>
+        
+        <p class="description">
+            A private, offline-first journaling app for iOS and Android. 
+            Your thoughts, your entries, your data. No cloud lock-in, no tracking, 
+            just pure journaling with beautiful design and powerful features.
+        </p>
+
+        <ul class="features">
+            <li class="feature-item">
+                <span class="feature-icon" role="img" aria-label="Lock">🔒</span>
+                <span class="feature-text">Private & Secure</span>
+            </li>
+            <li class="feature-item">
+                <span class="feature-icon" role="img" aria-label="Airplane">✈️</span>
+                <span class="feature-text">Offline First</span>
+            </li>
+            <li class="feature-item">
+                <span class="feature-icon" role="img" aria-label="Cloud">☁️</span>
+                <span class="feature-text">Optional Sync</span>
+            </li>
+            <li class="feature-item">
+                <span class="feature-icon" role="img" aria-label="Tag">🏷️</span>
+                <span class="feature-text">Tag & Organize</span>
+            </li>
+            <li class="feature-item">
+                <span class="feature-icon" role="img" aria-label="Moon">🌙</span>
+                <span class="feature-text">Dark Mode</span>
+            </li>
+            <li class="feature-item">
+                <span class="feature-icon" role="img" aria-label="Export">📤</span>
+                <span class="feature-text">Full Export</span>
+            </li>
+        </ul>
+
+        <footer>
+            <p>
+                Built with care by 
+                <a href="https://stephenpopoola.uk" target="_blank" rel="noopener">Steve Popoola</a>
+            </p>
+            <p style="margin-top: 0.5rem;">
+                © 2026 QuietTrace
+            </p>
+        </footer>
+    </main>
+</body>
+</html>
