@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — QuietTrace</title>
+  <meta name="description" content="QuietTrace Privacy Policy — how we handle your data." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --forest:   #2E6B4F;
+      --sage:     #4A7C5F;
+      --offwhite: #F8F7F4;
+      --white:    #FFFFFF;
+      --text-dark:#1C2B22;
+      --text-mid: #3D5244;
+      --text-soft:#6B7C72;
+      --divider:  #D6EDE2;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      background: var(--offwhite);
+      color: var(--text-dark);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.7;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(248, 247, 244, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--divider);
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-logo-mark {
+      width: 32px;
+      height: 32px;
+      background: var(--forest);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-logo-mark span {
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-wordmark {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-dark);
+      letter-spacing: -0.2px;
+    }
+
+    .nav-back {
+      font-size: 14px;
+      color: var(--sage);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-back:hover { text-decoration: underline; }
+
+    /* HEADER */
+    .page-header {
+      background: var(--forest);
+      color: white;
+      padding: 56px 24px 52px;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+    }
+
+    .page-header p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.65);
+    }
+
+    /* CONTENT */
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .content section {
+      margin-bottom: 48px;
+    }
+
+    .content h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--forest);
+      letter-spacing: -0.3px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--divider);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+    }
+
+    .content p {
+      font-size: 15.5px;
+      color: var(--text-mid);
+      margin-bottom: 14px;
+    }
+
+    .content p:last-child { margin-bottom: 0; }
+
+    .content ul {
+      list-style: none;
+      margin: 0 0 14px 0;
+      padding: 0;
+    }
+
+    .content ul li {
+      font-size: 15.5px;
+      color: var(--text-mid);
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    .content ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 6px;
+      height: 6px;
+      background: var(--sage);
+      border-radius: 50%;
+    }
+
+    .highlight-box {
+      background: white;
+      border: 1.5px solid var(--divider);
+      border-left: 4px solid var(--forest);
+      border-radius: 0 12px 12px 0;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      font-size: 15px;
+      color: var(--text-mid);
+    }
+
+    .highlight-box strong {
+      color: var(--forest);
+    }
+
+    .content a {
+      color: var(--sage);
+      text-decoration: none;
+    }
+
+    .content a:hover { text-decoration: underline; }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 28px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      font-size: 13px;
+      color: var(--text-soft);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: var(--text-soft);
+      text-decoration: none;
+    }
+
+    .footer-links a:hover { color: var(--sage); }
+
+    @media (max-width: 560px) {
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="/">
+      <div class="nav-logo-mark">
+        <!--
+          Replace with: <img src="/assets/qtapp_mark.png" width="20" height="20" alt="QuietTrace" />
+        -->
+        <span>Q</span>
+      </div>
+      <span class="nav-wordmark">QuietTrace</span>
+    </a>
+    <a class="nav-back" href="/">← Back to home</a>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="page-header">
+    <h1>Privacy Policy</h1>
+    <p>Last updated: 27 April 2026</p>
+  </header>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <section>
+      <div class="highlight-box">
+        <p><strong>The short version:</strong> QuietTrace does not sell your data, does not show you ads, and does not share your journal entries with anyone. Your words are yours.</p>
+      </div>
+      <p>This Privacy Policy explains what information QuietTrace collects, how it is used, and the choices you have. It applies to the QuietTrace iOS app, Android app, and web application at <a href="https://app.quiettrace.app">app.quiettrace.app</a>.</p>
+      <p>By using QuietTrace, you agree to the practices described in this policy. If you have questions, contact us at <a href="mailto:hello@quiettrace.app">hello@quiettrace.app</a>.</p>
+    </section>
+
+    <section>
+      <h2>1. Information we collect</h2>
+      <p>We collect only what is necessary to provide the service.</p>
+      <p><strong>Account information</strong></p>
+      <ul>
+        <li>Your email address, used to create and manage your account</li>
+        <li>A hashed password — we never store your password in plain text</li>
+      </ul>
+      <p><strong>Journal content</strong></p>
+      <ul>
+        <li>Journal entries you write, including title, body text, date, and time</li>
+        <li>Mood and category tags you assign to entries</li>
+        <li>Categories you create</li>
+        <li>Your preferred theme and default mood settings</li>
+      </ul>
+      <p><strong>Technical information</strong></p>
+      <ul>
+        <li>Basic usage data such as app version and platform (iOS, Android, or web), used to diagnose crashes and improve the app</li>
+        <li>Authentication tokens stored locally on your device to keep you signed in</li>
+      </ul>
+      <p>We do not collect your name, phone number, location, contacts, or any data from other apps on your device.</p>
+    </section>
+
+    <section>
+      <h2>2. How we use your information</h2>
+      <p>We use the information we collect solely to:</p>
+      <ul>
+        <li>Create and manage your account</li>
+        <li>Sync your journal entries across your devices</li>
+        <li>Allow you to export your data</li>
+        <li>Send transactional emails (password reset, account confirmation) — no marketing emails unless you opt in</li>
+        <li>Diagnose and fix technical problems</li>
+      </ul>
+      <p>We do not use your journal content for advertising, training machine learning models, or any purpose beyond delivering the QuietTrace service to you.</p>
+    </section>
+
+    <section>
+      <h2>3. Data storage and security</h2>
+      <p>Your data is stored securely using <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a>, a hosted database platform. Data is encrypted in transit using TLS and encrypted at rest.</p>
+      <p>Supabase infrastructure is hosted on AWS and adheres to SOC 2 Type II standards. You can review Supabase's own security practices at <a href="https://supabase.com/security" target="_blank" rel="noopener">supabase.com/security</a>.</p>
+      <p>No security system is perfect. If you discover a security issue, please contact us immediately at <a href="mailto:hello@quiettrace.app">hello@quiettrace.app</a>.</p>
+    </section>
+
+    <section>
+      <h2>4. Data sharing</h2>
+      <p>We do not sell, rent, or share your personal information or journal content with third parties, except in the following limited circumstances:</p>
+      <ul>
+        <li><strong>Service providers:</strong> Supabase, as described above, processes data on our behalf under a data processing agreement</li>
+        <li><strong>Legal requirements:</strong> We may disclose information if required to do so by law or in response to a valid legal request</li>
+        <li><strong>Business transfer:</strong> If QuietTrace is acquired or merged with another company, your data may be transferred — you will be notified in advance</li>
+      </ul>
+      <p>In all other cases, your data stays within QuietTrace.</p>
+    </section>
+
+    <section>
+      <h2>5. Your rights and choices</h2>
+      <p>You are in control of your data. At any time, you can:</p>
+      <ul>
+        <li><strong>Export your journal</strong> — download a complete copy in JSON or Markdown format from the Profile screen</li>
+        <li><strong>Delete an entry</strong> — remove any individual journal entry from within the app</li>
+        <li><strong>Delete your account</strong> — contact us at <a href="mailto:hello@quiettrace.app">hello@quiettrace.app</a> to request full account and data deletion. We will process your request within 30 days</li>
+        <li><strong>Update your email or password</strong> — from the Profile screen in the app</li>
+      </ul>
+      <p>If you are located in the European Economic Area or the United Kingdom, you may also have rights under GDPR or UK GDPR, including the right to access, rectify, restrict, or port your data. Contact us to exercise any of these rights.</p>
+    </section>
+
+    <section>
+      <h2>6. Cookies and local storage</h2>
+      <p>The QuietTrace web app uses browser local storage to maintain your session and remember your theme preference. No advertising cookies or third-party tracking scripts are used.</p>
+      <p>The QuietTrace iOS and Android apps use secure on-device storage for authentication tokens. No third-party analytics SDKs are embedded in the app.</p>
+    </section>
+
+    <section>
+      <h2>7. Children's privacy</h2>
+      <p>QuietTrace is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
+    </section>
+
+    <section>
+      <h2>8. Changes to this policy</h2>
+      <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top of this page. For material changes, we will notify you by email or with a notice in the app before the change takes effect.</p>
+      <p>Continued use of QuietTrace after changes are posted constitutes your acceptance of the updated policy.</p>
+    </section>
+
+    <section>
+      <h2>9. Contact</h2>
+      <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:hello@quiettrace.app">hello@quiettrace.app</a></li>
+        <li><strong>Website:</strong> <a href="https://quiettrace.app">quiettrace.app</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">© 2026 QuietTrace</div>
+    <div class="footer-links">
+      <a href="/privacy">Privacy Policy</a>
+      <a href="mailto:hello@quiettrace.app">Contact</a>
+      <a href="https://app.quiettrace.app">Web App</a>
+    </div>
+  </footer>
+
+</body>
+</html>
