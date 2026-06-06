@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service - QuietTrace</title>
+  <meta name="description" content="QuietTrace Terms of Service - the terms that apply when you use QuietTrace." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --forest:   #2E6B4F;
+      --sage:     #4A7C5F;
+      --offwhite: #F8F7F4;
+      --white:    #FFFFFF;
+      --text-dark:#1C2B22;
+      --text-mid: #3D5244;
+      --text-soft:#6B7C72;
+      --divider:  #D6EDE2;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      background: var(--offwhite);
+      color: var(--text-dark);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(248, 247, 244, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--divider);
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-logo-mark {
+      width: 32px;
+      height: 32px;
+      background: var(--forest);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-logo-mark span {
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-wordmark {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-dark);
+      letter-spacing: -0.2px;
+    }
+
+    .nav-back {
+      font-size: 14px;
+      color: var(--sage);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-back:hover { text-decoration: underline; }
+
+    .page-header {
+      background: var(--forest);
+      color: white;
+      padding: 56px 24px 52px;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+    }
+
+    .page-header p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.65);
+    }
+
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .content section {
+      margin-bottom: 48px;
+    }
+
+    .content h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--forest);
+      letter-spacing: -0.3px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--divider);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+    }
+
+    .content p {
+      font-size: 15.5px;
+      color: var(--text-mid);
+      margin-bottom: 14px;
+    }
+
+    .content p:last-child { margin-bottom: 0; }
+
+    .content ul {
+      list-style: none;
+      margin: 0 0 14px 0;
+      padding: 0;
+    }
+
+    .content ul li {
+      font-size: 15.5px;
+      color: var(--text-mid);
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    .content ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 6px;
+      height: 6px;
+      background: var(--sage);
+      border-radius: 50%;
+    }
+
+    .highlight-box {
+      background: white;
+      border: 1.5px solid var(--divider);
+      border-left: 4px solid var(--forest);
+      border-radius: 0 12px 12px 0;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      font-size: 15px;
+      color: var(--text-mid);
+    }
+
+    .highlight-box strong {
+      color: var(--forest);
+    }
+
+    .content a {
+      color: var(--sage);
+      text-decoration: none;
+    }
+
+    .content a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 28px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      font-size: 13px;
+      color: var(--text-soft);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: var(--text-soft);
+      text-decoration: none;
+    }
+
+    .footer-links a:hover { color: var(--sage); }
+
+    @media (max-width: 560px) {
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <div class="nav-logo-mark">
+        <span>Q</span>
+      </div>
+      <span class="nav-wordmark">QuietTrace</span>
+    </a>
+    <a class="nav-back" href="/">← Back to home</a>
+  </nav>
+
+  <header class="page-header">
+    <h1>Terms of Service</h1>
+    <p>Last updated: 6 June 2026</p>
+  </header>
+
+  <main class="content">
+
+    <section>
+      <div class="highlight-box">
+        <p><strong>The short version:</strong> QuietTrace is a private journaling app. Please use it responsibly, keep your account secure, and remember that your journal entries remain yours.</p>
+      </div>
+      <p>These Terms of Service govern your access to and use of the QuietTrace iOS app, Android app, and web application at <a href="https://app.quiettrace.app">app.quiettrace.app</a>.</p>
+      <p>By downloading, accessing, or using QuietTrace, you agree to these terms and to our <a href="/privacy.html">Privacy Policy</a>. If you do not agree, please do not use QuietTrace.</p>
+    </section>
+
+    <section>
+      <h2>1. Who may use QuietTrace</h2>
+      <p>You must be at least 13 years old to use QuietTrace. If you use QuietTrace on behalf of another person or organization, you confirm that you have authority to accept these terms for them.</p>
+      <p>You are responsible for keeping your account credentials secure and for all activity that happens under your account.</p>
+    </section>
+
+    <section>
+      <h2>2. Your journal content</h2>
+      <p>You keep ownership of the journal entries, categories, mood tags, and other content you create in QuietTrace. We do not claim ownership of your words.</p>
+      <p>You grant QuietTrace a limited permission to store, process, and sync your content only as needed to provide the service to you, including displaying your entries in the app and helping you export your data.</p>
+      <p>You are responsible for the content you create and for making sure you have the right to store it in QuietTrace.</p>
+    </section>
+
+    <section>
+      <h2>3. Acceptable use</h2>
+      <p>Please do not use QuietTrace to:</p>
+      <ul>
+        <li>Break any law or regulation</li>
+        <li>Upload malicious code or attempt to interfere with the service</li>
+        <li>Access, copy, or modify another person's account or data without permission</li>
+        <li>Reverse engineer, scrape, overload, or abuse the service</li>
+        <li>Use QuietTrace for content or activity that violates the rights of others</li>
+      </ul>
+      <p>We may suspend or terminate accounts that violate these terms or create risk for QuietTrace, other users, or the service.</p>
+    </section>
+
+    <section>
+      <h2>4. Privacy and data handling</h2>
+      <p>Our <a href="/privacy.html">Privacy Policy</a> explains what we collect, how we use it, and how you can request export or deletion of your data.</p>
+      <p>QuietTrace does not sell your personal information, does not show advertising in your journal, and does not use your journal content to train machine learning models.</p>
+    </section>
+
+    <section>
+      <h2>5. App stores and third-party services</h2>
+      <p>If you downloaded QuietTrace through the Apple App Store or Google Play, the store's own terms may also apply to your download, purchase, updates, refunds, and device usage.</p>
+      <p>QuietTrace uses selected third-party service providers, including Supabase for secure data storage and authentication. These providers process data only as needed to support the service.</p>
+    </section>
+
+    <section>
+      <h2>6. Payments and subscriptions</h2>
+      <p>QuietTrace may offer free and paid features. Any paid features, subscriptions, free trials, renewals, cancellations, and refunds will be shown clearly before purchase and may be processed through the relevant app store or payment provider.</p>
+      <p>If a purchase is processed by Apple or Google, refunds and billing support are handled according to that store's policies.</p>
+    </section>
+
+    <section>
+      <h2>7. Not medical or professional advice</h2>
+      <p>QuietTrace is a journaling and reflection tool. It is not medical care, therapy, crisis support, legal advice, financial advice, or any other professional service.</p>
+      <p>If you are in immediate danger or need urgent support, contact local emergency services or a qualified professional.</p>
+    </section>
+
+    <section>
+      <h2>8. Availability and changes</h2>
+      <p>We aim to keep QuietTrace reliable, but we do not guarantee that the service will always be available, uninterrupted, or error-free.</p>
+      <p>We may update, change, suspend, or discontinue parts of QuietTrace from time to time. If we make material changes that affect your use of the service, we will take reasonable steps to notify you.</p>
+    </section>
+
+    <section>
+      <h2>9. Intellectual property</h2>
+      <p>QuietTrace, including its name, branding, design, software, and service features, is owned by QuietTrace or its licensors. These terms do not grant you any right to use the QuietTrace name, branding, or software except as necessary to use the app.</p>
+      <p>You may not copy, modify, distribute, sell, lease, or create derivative works from QuietTrace unless we give you written permission.</p>
+    </section>
+
+    <section>
+      <h2>10. Disclaimers and liability</h2>
+      <p>QuietTrace is provided "as is" and "as available." To the fullest extent permitted by law, we disclaim warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+      <p>To the fullest extent permitted by law, QuietTrace will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of data, profits, goodwill, or business opportunities.</p>
+      <p>Nothing in these terms limits liability where the law does not allow it to be limited.</p>
+    </section>
+
+    <section>
+      <h2>11. Ending your use of QuietTrace</h2>
+      <p>You may stop using QuietTrace at any time. You can export your journal from within the app and may request account deletion by contacting <a href="mailto:hello@quiettrace.app">hello@quiettrace.app</a>.</p>
+      <p>We may suspend or terminate access if you violate these terms, create legal risk, or misuse the service.</p>
+    </section>
+
+    <section>
+      <h2>12. Changes to these terms</h2>
+      <p>We may update these terms from time to time. When we do, we will update the "Last updated" date at the top of this page.</p>
+      <p>Continued use of QuietTrace after updated terms are posted means you accept the updated terms.</p>
+    </section>
+
+    <section>
+      <h2>13. Contact</h2>
+      <p>If you have any questions about these Terms of Service, please contact:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:hello@quiettrace.app">hello@quiettrace.app</a></li>
+        <li><strong>Website:</strong> <a href="https://quiettrace.app">quiettrace.app</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-left">&copy; 2026 QuietTrace</div>
+    <div class="footer-links">
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+      <a href="mailto:hello@quiettrace.app">Contact</a>
+      <a href="https://app.quiettrace.app">Web App</a>
+    </div>
+  </footer>
+
+</body>
+</html>

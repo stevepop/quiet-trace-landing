@@ -147,8 +147,8 @@ To add Mailchimp/ConvertKit integration later:
 - [ ] Animated hero section
 - [ ] Feature showcase section
 - [ ] Screenshot carousel
-- [ ] Privacy policy page
-- [ ] Terms of service page
+- [x] Privacy policy page
+- [x] Terms of service page
 - [ ] Blog/updates section
 - [ ] Social media links
 - [ ] Analytics integration (privacy-friendly)
