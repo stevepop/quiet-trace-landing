@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support - QuietTrace</title>
+  <meta name="description" content="QuietTrace Support - help with accounts, journaling, sync, export, privacy, and app store purchases." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --forest:   #2E6B4F;
+      --sage:     #4A7C5F;
+      --offwhite: #F8F7F4;
+      --white:    #FFFFFF;
+      --text-dark:#1C2B22;
+      --text-mid: #3D5244;
+      --text-soft:#6B7C72;
+      --divider:  #D6EDE2;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      background: var(--offwhite);
+      color: var(--text-dark);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(248, 247, 244, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--divider);
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-logo-mark {
+      width: 32px;
+      height: 32px;
+      background: var(--forest);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-logo-mark span {
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-wordmark {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-dark);
+      letter-spacing: -0.2px;
+    }
+
+    .nav-back {
+      font-size: 14px;
+      color: var(--sage);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-back:hover { text-decoration: underline; }
+
+    .page-header {
+      background: var(--forest);
+      color: white;
+      padding: 56px 24px 52px;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+    }
+
+    .page-header p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.65);
+    }
+
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .content section {
+      margin-bottom: 48px;
+    }
+
+    .content h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--forest);
+      letter-spacing: -0.3px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--divider);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+    }
+
+    .content p {
+      font-size: 15.5px;
+      color: var(--text-mid);
+      margin-bottom: 14px;
+    }
+
+    .content p:last-child { margin-bottom: 0; }
+
+    .content ul {
+      list-style: none;
+      margin: 0 0 14px 0;
+      padding: 0;
+    }
+
+    .content ul li {
+      font-size: 15.5px;
+      color: var(--text-mid);
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    .content ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 6px;
+      height: 6px;
+      background: var(--sage);
+      border-radius: 50%;
+    }
+
+    .highlight-box {
+      background: white;
+      border: 1.5px solid var(--divider);
+      border-left: 4px solid var(--forest);
+      border-radius: 0 12px 12px 0;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      font-size: 15px;
+      color: var(--text-mid);
+    }
+
+    .highlight-box strong {
+      color: var(--forest);
+    }
+
+    .content a {
+      color: var(--sage);
+      text-decoration: none;
+    }
+
+    .content a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 28px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .footer-left {
+      font-size: 13px;
+      color: var(--text-soft);
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: var(--text-soft);
+      text-decoration: none;
+    }
+
+    .footer-links a:hover { color: var(--sage); }
+
+    @media (max-width: 560px) {
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <div class="nav-logo-mark">
+        <span>Q</span>
+      </div>
+      <span class="nav-wordmark">QuietTrace</span>
+    </a>
+    <a class="nav-back" href="/">← Back to home</a>
+  </nav>
+
+  <header class="page-header">
+    <h1>Support</h1>
+    <p>Last updated: 6 June 2026</p>
+  </header>
+
+  <main class="content">
+
+    <section>
+      <div class="highlight-box">
+        <p><strong>Need help?</strong> Email <a href="mailto:hello@quiettrace.app">hello@quiettrace.app</a> and include the device you are using, the app version if you know it, and a short description of what happened.</p>
+      </div>
+      <p>QuietTrace is built to be calm and simple, but support should be just as clear. This page covers common questions about accounts, journaling, sync, export, privacy, and purchases.</p>
+      <p>We aim to respond to support requests within 2 business days.</p>
+    </section>
+
+    <section>
+      <h2>1. Account access</h2>
+      <p>If you cannot sign in, first check that you are using the same email address you used when creating your QuietTrace account.</p>
+      <ul>
+        <li>Use the password reset option if you cannot remember your password</li>
+        <li>Check your spam or junk folder if an account email does not arrive</li>
+        <li>Make sure your device has a working internet connection before trying again</li>
+      </ul>
+      <p>If you still cannot access your account, contact us from the email address connected to your account so we can help safely.</p>
+    </section>
+
+    <section>
+      <h2>2. Writing and managing entries</h2>
+      <p>QuietTrace lets you create journal entries, add mood and category tags, and revisit your writing over time.</p>
+      <ul>
+        <li>If an entry does not appear immediately, close and reopen the app to refresh your local view</li>
+        <li>If a category is missing, check whether it was renamed or deleted from your profile settings</li>
+        <li>If you accidentally delete an entry, contact support as soon as possible and include the approximate date of the entry</li>
+      </ul>
+      <p>We cannot guarantee recovery of deleted entries, but we will always check what options are available.</p>
+    </section>
+
+    <section>
+      <h2>3. Sync across devices</h2>
+      <p>QuietTrace syncs your journal across iOS, Android, and the web app when you are signed in and online.</p>
+      <ul>
+        <li>Confirm that each device is signed in to the same account</li>
+        <li>Check that each device has internet access</li>
+        <li>Update to the latest available app version before reporting sync issues</li>
+        <li>Wait a moment after writing a new entry before switching devices</li>
+      </ul>
+      <p>If entries still look out of sync, email support with the affected platforms and the approximate time the entry was created or edited.</p>
+    </section>
+
+    <section>
+      <h2>4. Exporting your journal</h2>
+      <p>Your words are yours. QuietTrace supports full journal export from the Profile screen.</p>
+      <ul>
+        <li>Use JSON if you want a structured backup of your data</li>
+        <li>Use Markdown if you want readable plain-text journal files</li>
+        <li>Keep exported files somewhere private, especially if they contain sensitive entries</li>
+      </ul>
+      <p>If export fails, try again on a stable connection. If the issue continues, contact support and tell us which export format you selected.</p>
+    </section>
+
+    <section>
+      <h2>5. Account and data deletion</h2>
+      <p>You can request account deletion by emailing <a href="mailto:hello@quiettrace.app">hello@quiettrace.app</a> from the email address connected to your QuietTrace account.</p>
+      <p>Deletion requests are processed within 30 days. Before requesting deletion, export your journal if you want to keep a copy, because deleted account data may not be recoverable.</p>
+    </section>
+
+    <section>
+      <h2>6. Privacy and security</h2>
+      <p>QuietTrace does not sell your data, does not show ads, and does not use your journal content to train machine learning models.</p>
+      <ul>
+        <li>Review the <a href="/privacy.html">Privacy Policy</a> for details on what data is collected and how it is used</li>
+        <li>Use a strong password that you do not reuse elsewhere</li>
+        <li>Contact us immediately if you think your account has been accessed without permission</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Billing and app store purchases</h2>
+      <p>If QuietTrace offers paid features, purchases made through the Apple App Store or Google Play are managed by the relevant store.</p>
+      <ul>
+        <li>For Apple purchases, use your Apple account purchase history or Apple Support for refunds</li>
+        <li>For Google Play purchases, use your Google Play order history or Google Play Support for refunds</li>
+        <li>If a paid feature does not unlock after purchase, contact us with the platform and approximate purchase time</li>
+      </ul>
+      <p>Please do not send full payment card details. We do not need them to investigate app store purchase issues.</p>
+    </section>
+
+    <section>
+      <h2>8. Reporting bugs</h2>
+      <p>Bug reports are most helpful when they include enough context to reproduce the issue.</p>
+      <ul>
+        <li>What you expected to happen</li>
+        <li>What actually happened</li>
+        <li>The device and platform you were using, such as iPhone, Android, or web</li>
+        <li>The approximate time the issue happened</li>
+        <li>A screenshot, if it does not reveal private journal content</li>
+      </ul>
+      <p>Send bug reports to <a href="mailto:hello@quiettrace.app">hello@quiettrace.app</a>.</p>
+    </section>
+
+    <section>
+      <h2>9. Useful links</h2>
+      <ul>
+        <li><strong>Email support:</strong> <a href="mailto:hello@quiettrace.app">hello@quiettrace.app</a></li>
+        <li><strong>Privacy Policy:</strong> <a href="/privacy.html">quiettrace.app/privacy</a></li>
+        <li><strong>Terms of Service:</strong> <a href="/terms.html">quiettrace.app/terms</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-left">&copy; 2026 QuietTrace</div>
+    <div class="footer-links">
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+      <a href="/support.html">Support</a>
+      <a href="mailto:hello@quiettrace.app">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
